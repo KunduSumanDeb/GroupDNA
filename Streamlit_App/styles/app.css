@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --gdna-bg: #0b1020;
+  --gdna-card: rgba(255,255,255,.075);
+  --gdna-border: rgba(255,255,255,.14);
+  --gdna-text: #e5e7eb;
+  --gdna-muted: #94a3b8;
+  --gdna-purple: #7c3aed;
+  --gdna-cyan: #06b6d4;
+}
+
+html, body, [class*="css"] {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.stApp {
+  background:
+    radial-gradient(circle at top left, rgba(124,58,237,.18), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(6,182,212,.14), transparent 30rem),
+    var(--gdna-bg);
+}
+
+[data-testid="stSidebar"] {
+  background: rgba(8,13,28,.86);
+  border-right: 1px solid var(--gdna-border);
+}
+
+.block-container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  max-width: 1420px;
+}
+
+.gdna-hero {
+  min-height: 420px;
+  border: 1px solid var(--gdna-border);
+  border-radius: 28px;
+  padding: clamp(2rem, 6vw, 5rem);
+  background:
+    linear-gradient(135deg, rgba(124,58,237,.72), rgba(6,182,212,.38)),
+    url("https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 24px 80px rgba(0,0,0,.28);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gdna-hero h1 {
+  font-size: clamp(3rem, 9vw, 7rem);
+  line-height: .9;
+  margin: .4rem 0 1rem 0;
+  letter-spacing: 0;
+  color: white;
+}
+
+.gdna-hero p {
+  color: rgba(255,255,255,.9);
+  font-size: clamp(1.15rem, 2.4vw, 1.75rem);
+  max-width: 700px;
+}
+
+.gdna-pill {
+  display: inline-flex;
+  width: fit-content;
+  padding: .5rem .8rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.16);
+  border: 1px solid rgba(255,255,255,.22);
+  color: white;
+  font-weight: 700;
+  backdrop-filter: blur(16px);
+}
+
+.gdna-card {
+  border: 1px solid var(--gdna-border);
+  border-radius: 18px;
+  background: var(--gdna-card);
+  padding: 1.15rem;
+  box-shadow: 0 12px 36px rgba(0,0,0,.14);
+  backdrop-filter: blur(18px);
+}
+
+.gdna-metric {
+  min-height: 132px;
+}
+
+.gdna-metric-label {
+  color: var(--gdna-muted);
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.gdna-metric-value {
+  color: var(--gdna-text);
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  font-weight: 800;
+  margin-top: .35rem;
+  overflow-wrap: anywhere;
+}
+
+.gdna-metric-caption {
+  color: var(--gdna-muted);
+  font-size: .9rem;
+  margin-top: .25rem;
+}
+
+.gdna-page-title h2 {
+  color: var(--gdna-text);
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  margin-bottom: .3rem;
+}
+
+.gdna-page-title p {
+  color: var(--gdna-muted);
+  font-size: 1.05rem;
+  margin-top: 0;
+}
+
+div[data-testid="stMetric"] {
+  border: 1px solid var(--gdna-border);
+  border-radius: 18px;
+  background: var(--gdna-card);
+  padding: 1rem;
+}
+
+.stTabs [data-baseweb="tab-list"] {
+  gap: .4rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+  border-radius: 999px;
+  border: 1px solid var(--gdna-border);
+  padding: .45rem .9rem;
+  background: rgba(255,255,255,.05);
+}
+
+@media (max-width: 720px) {
+  .gdna-hero {
+    min-height: 360px;
+    border-radius: 20px;
+  }
+  .gdna-card {
+    border-radius: 14px;
+  }
+}
