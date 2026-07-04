@@ -4,6 +4,14 @@ GroupDNA is a Python-based analytics project designed to transform exported What
 
 The project is especially useful for understanding how a group behaves over time, who contributes the most, when the group is most active, and what themes appear repeatedly in conversation. It combines data processing, visualization, and reporting into a workflow that can be used both for research and for presenting group dynamics in a clear, visual way.
 
+## Try the Streamlit app
+
+Click the button below to launch the interactive Streamlit experience directly from GitHub/Streamlit Cloud:
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/KunduSumanDeb/GroupDNA/main/Streamlit_App/app.py)
+
+If the hosted app is not available yet, you can still run it locally by following the setup instructions in [STREAMLIT_SETUP.md](STREAMLIT_SETUP.md).
+
 ## What this project does
 
 GroupDNA can:
